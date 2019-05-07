@@ -1,0 +1,2191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eCog.Proc UserName="delph" Company="" Copyright="" version="20171016" use-reproducable-poly="1" project-unit="5" engine-version="9.3.2" engine-build="8" update-topology="0" distance_calculation="CG" resampling_compatibility="0" ver="0">
+	<ruleset-info>
+		<name>dktest</name>
+		<author>delph</author>
+		<tags></tags>
+		<version></version>
+		<description></description>
+		<input></input>
+		<output></output>
+	</ruleset-info>
+	<ParamValueSetCntnr></ParamValueSetCntnr>
+	<ObjectDependencies>
+		<ImgLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="Red" flags="12">
+						<Assignment Chnl="0" MapName="main"></Assignment>
+						<LastAssignment Chnl="0" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Green" flags="12">
+						<Assignment Chnl="1" MapName="main"></Assignment>
+						<LastAssignment Chnl="1" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Blue" flags="12">
+						<Assignment Chnl="2" MapName="main"></Assignment>
+						<LastAssignment Chnl="2" MapName="main"></LastAssignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+					<ChnlProxy strName="Black_layer" flags="12">
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ImgLayers>
+		<ThmLayers>
+			<ChnlProxyCntnr>
+				<Layers></Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ThmLayers>
+		<MapLvlProxyCntnr>
+			<MapLvlProxies>
+				<MapLvlProxy strName="Level1" bVrbl="0">
+					<Assignment MapLvl="1" MapName="main"></Assignment>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				</MapLvlProxy>
+			</MapLvlProxies>
+			<MapLvlVrblValues></MapLvlVrblValues>
+		</MapLvlProxyCntnr>
+		<ProcVrblCntnr></ProcVrblCntnr>
+		<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000000555111512312578270212" NNSlope="0.20000000000000001110223024625156540424" RdiResamplOptns="3">
+			<MapUnit>
+				<Map MapName="main" Unit="5"></Map>
+			</MapUnit>
+			<AllClss>
+				<Clss id="1" name="Forest" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555135756" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="2" name="Soil" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555136574" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="3" name="Black" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1557014532" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="0" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="4" name="Water" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555246241" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="0" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="5" name="Swamp" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555246951" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="6" name="Contour lines" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1557020545" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="128" G="80" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="7" name="Long_brown" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555249940" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="8" name="Characters" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1557021965" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="128" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="9" name="Light Water" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1557018097" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="10" name="Long Black" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1557022265" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="0" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+			</AllClss>
+			<PropTree version="20100426">
+				<AllProps>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555135142" group_id="hsi.chnl.object.prop">
+						<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Red" scope="" name="valChnl_R"></DValue>
+							<DValue type="img_chnl" value="Green" scope="" name="valChnl_G"></DValue>
+							<DValue type="img_chnl" value="Blue" scope="" name="valChnl_B"></DValue>
+							<DValue value="1" type="int" name="iResult"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555136295" group_id="hsi.chnl.object.prop">
+						<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Red" scope="" name="valChnl_R"></DValue>
+							<DValue type="img_chnl" value="Green" scope="" name="valChnl_G"></DValue>
+							<DValue type="img_chnl" value="Blue" scope="" name="valChnl_B"></DValue>
+							<DValue value="3" type="int" name="iResult"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555136347" group_id="hsi.chnl.object.prop">
+						<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Red" scope="" name="valChnl_R"></DValue>
+							<DValue type="img_chnl" value="Green" scope="" name="valChnl_G"></DValue>
+							<DValue type="img_chnl" value="Blue" scope="" name="valChnl_B"></DValue>
+							<DValue value="2" type="int" name="iResult"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="65538" strUserName="delph" tChngTime="1555134453" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="AF0D7167-ADE8-4240-AAA4-AC2C188E9AF5" InstID="Number of pixels"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555248616" group_id="relbrdr.nghb.class.prop">
+						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Swamp"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="5" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="65538" strUserName="delph" tChngTime="1555134453" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134453" group_id="ext.geom.object.prop">
+						<PropDscrId GUID="7D5D60D1-C310-48dc-9D5D-65BAAA4062F5" InstID="Length/Width"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Red"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Red" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Green"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Green" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Blue"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue type="img_chnl" value="Blue" scope="" name="valChnl"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1555249025" group_id="relarea.nghb.class.prop">
+						<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Water (0)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="4" type="clssId" name="valClss"></DValue>
+							<DValue value="0" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+				</AllProps>
+				<UserGroups></UserGroups>
+			</PropTree>
+			<Brightness>
+				<Map MapName="main">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="0." chnl="3"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+			</Brightness>
+			<AllVrblClss></AllVrblClss>
+			<AllSubClss>
+				<Clss Id="1" PrfdGrp="1">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="2" PrfdGrp="2">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="3" PrfdGrp="3">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="4" PrfdGrp="4">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="5" PrfdGrp="5">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="6" PrfdGrp="6">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="7" PrfdGrp="7">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="8" PrfdGrp="8">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="9" PrfdGrp="9">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="10" PrfdGrp="10">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+			</AllSubClss>
+			<AllTerm>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="2" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="3" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="4" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="5" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="6" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="7" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="8" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="9" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="10" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+			</AllTerm>
+		</ClssHrchy>
+		<MapVrblCntnr></MapVrblCntnr>
+		<FtrListVrblCntnr></FtrListVrblCntnr>
+		<CoordVrblCntnr></CoordVrblCntnr>
+		<ROIVrblCntnr></ROIVrblCntnr>
+		<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+		<ArrayCntnr>
+			<Arrays></Arrays>
+			<ArrayVrbls></ArrayVrbls>
+		</ArrayCntnr>
+		<Smpls>
+			<AllClss>
+				<SmplList ClssId="1"></SmplList>
+				<SmplList ClssId="2"></SmplList>
+				<SmplList ClssId="3"></SmplList>
+				<SmplList ClssId="4"></SmplList>
+				<SmplList ClssId="5"></SmplList>
+				<SmplList ClssId="6"></SmplList>
+				<SmplList ClssId="7"></SmplList>
+				<SmplList ClssId="8"></SmplList>
+				<SmplList ClssId="9"></SmplList>
+				<SmplList ClssId="10"></SmplList>
+			</AllClss>
+			<AllProp></AllProp>
+		</Smpls>
+		<plugin-list>
+			<plugin name="eCognition OpenCV algorithms PROTOTYPE" version="0.1"></plugin>
+			<plugin name="eCognition Internal Process Algorithms" version="0.1"></plugin>
+			<plugin name="eCognition Basic Process Algorithms" version="0.1"></plugin>
+		</plugin-list>
+	</ObjectDependencies>
+	<CustProcAlgrList></CustProcAlgrList>
+	<ExternalCustProcAlgrList></ExternalCustProcAlgrList>
+	<ProcessList>
+		<ProcBase Name="Workflow" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+				<Params></Params>
+			</Algorithm>
+			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+				<Params>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+				</Params>
+			</Domain>
+			<SubProc>
+				<ProcBase Name="Initial Segmentation" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="80 [shape:0.1 compct.:0.5] creating 'Level1'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="6534F2E1-485B-406f-B990-350824399FA8">
+								<Params>
+									<DValue value="1" type="bool" name="bDoOverwrite"></DValue>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue value="0" type="int" name="eLvlUsage"></DValue>
+									<DValue value="-1" type="int" name="iCompMode"></DValue>
+									<DValue type="vector" name="vImgLayerWghtVarOrValue">
+									<Values>
+									<DValue type="vector" indx="0">
+									<Values>
+									<DValue type="img_chnl" value="Blue" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" indx="1">
+									<Values>
+									<DValue type="img_chnl" value="Green" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" indx="2">
+									<Values>
+									<DValue type="img_chnl" value="Red" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" name="vImgLayerWght">
+									<Values>
+									<DValue type="vector" indx="0">
+									<Values>
+									<DValue type="img_chnl" value="Blue" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" indx="1">
+									<Values>
+									<DValue type="img_chnl" value="Green" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" indx="2">
+									<Values>
+									<DValue type="img_chnl" value="Red" scope="" indx="0"></DValue>
+									<DValue value="1." type="double" indx="1"></DValue>
+									</Values>
+									</DValue>
+									</Values>
+									</DValue>
+									<DValue type="vector" name="vThmLayerFlags">
+									<Values></Values>
+									</DValue>
+									<DValue value="80." type="double" name="vrblValScale"></DValue>
+									<DValue value="0.10000000000000000555111512312578270212" type="double" name="vrblHCShape"></DValue>
+									<DValue value="0.5" type="double" name="vrblHCArea"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="682A3AA1-9F4F-4dae-9E44-5015DF867712">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+				<ProcBase Name="First pass" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="Basic" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="at  Level1: remove classification" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="5DB9115B-F192-4809-8175-CCF665B82CE7">
+									<Params>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+									</Values>
+									</DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.09  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.24  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.13  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) &lt;= 0.5  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.25  at  Level1: Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="3" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="8.9999999999999996669330926124530378729e-002" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.23999999999999999111821580299874767661" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.13000000000000000444089209850062616169" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.5" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.25" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+						<ProcBase Name="Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.15  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.24  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.67  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.19  at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="1" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.14999999999999999444888487687421729788" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.23999999999999999111821580299874767661" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.67000000000000003996802888650563545525" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.19000000000000000222044604925031308085" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+						<ProcBase Name="Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="unclassified with HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.76  at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="2" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.76000000000000000888178419700125232339" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.08  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.15  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.55  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) &lt;= 0.88  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.4  at  Level1: Contour lines" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="6" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="8.0000000000000001665334536937734810635e-002" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.14999999999999999444888487687421729788" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.55000000000000004440892098500626161695" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.88000000000000000444089209850062616169" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.40000000000000002220446049250313080847" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+				<ProcBase Name="Second pass" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.22  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.55  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.26  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) &lt;= 0.25  at  Level1: Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="4" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.22000000000000000111022302462515654042" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.55000000000000004440892098500626161695" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.26000000000000000888178419700125232339" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.25" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.11  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.75  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.5  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) &lt;= 0.17  at  Level1: Light Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="9" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.11000000000000000055511151231257827021" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.75" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.5" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.17000000000000001221245327087672194466" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="Light Water at  Level1: Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="4" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="9" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+						<ProcBase Name="Characters extraction" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.08  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.37  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) &lt;= 0.5  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.05  at  Level1: Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="3" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="8.0000000000000001665334536937734810635e-002" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.36999999999999999555910790149937383831" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.5" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="5.0000000000000002775557561562891351059e-002" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="Black at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="2328636B-BAD3-4f5d-B5AA-FC209A0BFB65">
+									<Params>
+									<DValue value="0" type="bool" name="bFsnUp"></DValue>
+									<DValue type="vector" name="vThmLayerFlags">
+									<Values></Values>
+									</DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="3" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+						<ProcBase Name="More water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="Soil with Rel. area of Water (0) = 1  at  Level1: Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="4" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="2" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="5" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Water (0)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="1." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+			</SubProc>
+		</ProcBase>
+		<ProcBase Name="Unused" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+				<Params></Params>
+			</Algorithm>
+			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+				<Params>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+				</Params>
+			</Domain>
+			<SubProc>
+				<ProcBase Name="Black with Length/Width >= 3  at  Level1: Long Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+						<Params>
+							<DValue value="10" type="clssId" name="valClass"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="3" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh">
+								<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="7D5D60D1-C310-48dc-9D5D-65BAAA4062F5" InstID="Length/Width"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="3." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+								</TermThrsh>
+							</DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Black with Length >= 30 Pxl and Length &lt;= 61 Pxl at  Level1: Characters" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+						<Params>
+							<DValue value="8" type="clssId" name="valClass"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="3" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh">
+								<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="30." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="1" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="61." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+								</TermThrsh>
+							</DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.1  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) &lt;= 0.2  at  Level1: Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+						<Params>
+							<DValue value="3" type="clssId" name="valClass"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="Unclsfy" type="string" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh">
+								<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.10000000000000000555111512312578270212" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.20000000000000001110223024625156540424" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+								</TermThrsh>
+							</DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="at  Level1: create temp. image layer 'Black_layer' using 'HSI Transformation Intensity(R=Red,G=Green,B=Blue)'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="5E90E7AC-B952-47ad-B513-F2A3A3CCEE01">
+						<Params>
+							<DValue type="img_chnl" value="Black_layer" scope="" name="valTargetChnl"></DValue>
+							<DValue value="1" type="bool" name="bIsTargetVsbl"></DValue>
+							<DValue type="propDscrId" name="pPropDscr">
+								<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+							</DValue>
+							<DValue value="0." type="double" name="vrblValUndef"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Light Water, Water at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="2328636B-BAD3-4f5d-B5AA-FC209A0BFB65">
+						<Params>
+							<DValue value="0" type="bool" name="bFsnUp"></DValue>
+							<DValue type="vector" name="vThmLayerFlags">
+								<Values></Values>
+							</DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="9" type="clssId" indx="0"></DValue>
+									<DValue value="4" type="clssId" indx="1"></DValue>
+									<DValue value="User defined" type="string" indx="2"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Water extraction" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="Water with Length >= 16 Pxl and Length &lt;= 30 Pxl and Length/Width >= 7  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="5" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="4" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="16." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="30." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="7D5D60D1-C310-48dc-9D5D-65BAAA4062F5" InstID="Length/Width"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="7." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="with HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.2  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) &lt;= 0.4  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.3  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) &lt;= 0.63  at  Level1: Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="3" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.20000000000000001110223024625156540424" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.40000000000000002220446049250313080847" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.29999999999999998889776975374843459576" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.63000000000000000444089209850062616169" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="Soil with Length >= 16 Pxl and Length &lt;= 30 Pxl and Length/Width >= 7  and Rel. border to Swamp >= 0.1  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="5" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="2" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="16." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="91CC47C7-93D6-4829-A54F-44E87267F342" InstID="Length"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="30." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="7D5D60D1-C310-48dc-9D5D-65BAAA4062F5" InstID="Length/Width"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="7." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Swamp"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.10000000000000000555111512312578270212" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="Soil with Rel. border to Swamp >= 0.1  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="5" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="2" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Swamp"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.10000000000000000555111512312578270212" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="loop: Swamp, unclassified with Rel. area of Water (0) >= 0.8  at  Level1: Water" bLoopChg="1" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="4" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="5" type="clssId" indx="0"></DValue>
+									<DValue value="Unclsfy" type="string" indx="1"></DValue>
+									<DValue value="User defined" type="string" indx="2"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Water (0)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.80000000000000004440892098500626161695" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+				<ProcBase Name="Brown extraction" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="Contour lines with Length/Width >= 4  at  Level1: Long_brown" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+								<Params>
+									<DValue value="7" type="clssId" name="valClass"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="6" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="7D5D60D1-C310-48dc-9D5D-65BAAA4062F5" InstID="Length/Width"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="4." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+				<ProcBase Name="with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.15  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.24  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.7  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) >= 0.21  at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+						<Params>
+							<DValue value="1" type="clssId" name="valClass"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="Level1" bVrbl="0">
+									<Assignment MapLvl="1" MapName="main"></Assignment>
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="Disabled" type="string" indx="0"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh">
+								<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.14999999999999999444888487687421729788" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="1" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Hue(R='Red',G='Green',B='Blue')"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.23999999999999999111821580299874767661" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Intensity(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.69999999999999995559107901499373838305" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="0" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DD65D2ED-CB0C-4352-952A-C24AA8D36EC2" InstID="HSI Transformation Saturation(R=Red,G=Green,B=Blue)"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="0.20999999999999999222843882762390421703" type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+								</TermThrsh>
+							</DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="generate template template[20x20] from samples '' on layer ''" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="20B9BDBF-CFBD-47D0-9378-6DCA0ECC565F">
+						<Params>
+							<DValue value="template" type="string" name="sTemplateName"></DValue>
+							<DValue type="img_chnl" value="" name="valSampleLayer"></DValue>
+							<DValue type="img_chnl" value="" name="valInputLayer"></DValue>
+							<DValue value="20" type="int" name="vrblWidth"></DValue>
+							<DValue value="20" type="int" name="vrblHeight"></DValue>
+							<DValue value="0" type="int" name="iMode"></DValue>
+							<DValue value="1" type="int" name="vrblGroupSize"></DValue>
+							<DValue value="{:Workspc.OutputRoot}\templates" type="string" name="sTemplateFolder"></DValue>
+							<DValue value="-1" type="procVarId" name="vrblSampleCorrelation"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="682A3AA1-9F4F-4dae-9E44-5015DF867712">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+			</SubProc>
+		</ProcBase>
+	</ProcessList>
+	<ExportedItems></ExportedItems>
+	<LcnsIds></LcnsIds>
+</eCog.Proc>

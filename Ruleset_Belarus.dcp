@@ -29,15 +29,6 @@
 						<LastAssignment Chnl="2" MapName="main"></LastAssignment>
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					</ChnlProxy>
-					<ChnlProxy strName="Graticules" flags="12">
-						<Assignment Chnl="-1" MapName="main"></Assignment>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					</ChnlProxy>
-					<ChnlProxy strName="Interstitial" flags="12">
-						<Assignment Chnl="-1" MapName="main"></Assignment>
-						<LastAssignment Chnl="3" MapName="main"></LastAssignment>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					</ChnlProxy>
 				</Layers>
 				<Variables></Variables>
 			</ChnlProxyCntnr>
@@ -67,7 +58,14 @@
 			</MapLvlProxies>
 			<MapLvlVrblValues></MapLvlVrblValues>
 		</MapLvlProxyCntnr>
-		<ProcVrblCntnr></ProcVrblCntnr>
+		<ProcVrblCntnr>
+			<ProcVrbl iId="0" eType="1">
+				<DValue value="0." type="double"></DValue>
+				<NameExpr strTextExpr="Save_full_segmentation"></NameExpr>
+				<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+				<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+			</ProcVrbl>
+		</ProcVrblCntnr>
 		<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000000555111512312578270212" NNSlope="0.20000000000000001110223024625156540424" RdiResamplOptns="3">
 			<MapUnit>
 				<Map MapName="main" Unit="5"></Map>
@@ -79,7 +77,7 @@
 					<Color R="0" G="255" B="0"></Color>
 					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
 				</Clss>
-				<Clss id="2" name="Soil" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555136574" bShow="0" Trans="0.">
+				<Clss id="2" name="Open land" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1555136574" bShow="0" Trans="0.">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					<Color R="255" G="255" B="0"></Color>
@@ -107,12 +105,6 @@
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					<Color R="128" G="80" B="0"></Color>
-					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
-				</Clss>
-				<Clss id="8" name="Characters" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565562827" bShow="0" Trans="0.">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					<Color R="128" G="0" B="0"></Color>
 					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
 				</Clss>
 				<Clss id="13" name="Still unclassified" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565495842" bShow="0" Trans="0.">
@@ -151,7 +143,7 @@
 					<Color R="0" G="255" B="255"></Color>
 					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
 				</Clss>
-				<Clss id="39" name="Stream Temp on Soil" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565839688" bShow="0" Trans="0.">
+				<Clss id="39" name="Obsolete" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1568843933" bShow="0" Trans="0.">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					<Color R="189" G="0" B="0"></Color>
@@ -167,24 +159,6 @@
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					<Color R="160" G="160" B="164"></Color>
-					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
-				</Clss>
-				<Clss id="42" name="White" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1566080410" bShow="0" Trans="0.">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					<Color R="255" G="255" B="255"></Color>
-					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
-				</Clss>
-				<Clss id="17" name="Dotted border" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565578417" bShow="0" Trans="0.">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					<Color R="128" G="0" B="255"></Color>
-					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
-				</Clss>
-				<Clss id="43" name="Large river" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565509171" bShow="0" Trans="0.">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-					<Color R="0" G="0" B="255"></Color>
 					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
 				</Clss>
 				<Clss id="15" name="Large trees" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1565501506" bShow="0" Trans="0.">
@@ -224,6 +198,12 @@
 					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
 				</Clss>
 				<Clss id="48" name="Circles" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1568780096" bShow="0" Trans="0.">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="189" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="49" name="Border" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="delph" tChngTime="1568842205" bShow="0" Trans="0.">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 					<Color R="189" G="0" B="0"></Color>
@@ -289,14 +269,6 @@
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 						<Params></Params>
-					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1565576576" group_id="relbrdr.nghb.class.prop">
-						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Large river1"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue value="43" type="clssId" name="valClss"></DValue>
-						</Params>
 					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1565504785" group_id="relbrdr.nghb.class.prop">
 						<PropDscrId GUID="AA7CAC99-696D-4983-8F48-D07C4F816F2C" InstID="Rel. border to Trees"></PropDscrId>
@@ -414,24 +386,6 @@
 							<DValue value="50" type="int" name="iDist"></DValue>
 						</Params>
 					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1566160202" group_id="num.nghb.class.prop">
-						<PropDscrId GUID="7D1F1A4B-9BFD-4b29-BA08-AA370D63669B" InstID="Number of Dotted border (12)"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue value="17" type="clssId" name="valClss"></DValue>
-							<DValue value="20" type="int" name="iDist"></DValue>
-						</Params>
-					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1566083096" group_id="num.nghb.class.prop">
-						<PropDscrId GUID="7D1F1A4B-9BFD-4b29-BA08-AA370D63669B" InstID="Number of Characters (2)"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue value="8" type="clssId" name="valClss"></DValue>
-							<DValue value="60" type="int" name="iDist"></DValue>
-						</Params>
-					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1566101267" group_id="num.nghb.class.prop">
 						<PropDscrId GUID="7D1F1A4B-9BFD-4b29-BA08-AA370D63669B" InstID="Number of Large water body (20)"></PropDscrId>
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
@@ -510,6 +464,24 @@
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 						<Params></Params>
 					</PropDscr>
+					<PropDscr Flag="2" strUserName="delph" tChngTime="1568834415" group_id="dist.pos.object.prop">
+						<PropDscrId GUID="60BF43AE-801B-47ae-AD5A-FAC8B839412A" InstID="Distance to scene border"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="1"></DUnitInfo>
+						<Params></Params>
+					</PropDscr>
+					<PropDscr Flag="2147483650" strUserName="delph" tChngTime="1568841479" group_id="procvrbl.global.prop">
+						<PropDscrId GUID="5EB15E4B-593A-432f-A0ED-9B38627475D2" InstID="Save_full_segmentation"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="_Save_full_segmentation" type="string" name="NameExpr"></DValue>
+							<DValue value="0." type="double" name="vVal"></DValue>
+							<DValue value="0" type="bool" name="bShared"></DValue>
+							<DValue value="" type="string" name="strInstGUID"></DValue>
+						</Params>
+					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1567637235" group_id="dist.nghb.class.prop">
 						<PropDscrId GUID="5E38EFCC-6A01-4e77-B451-3F5B03E63B98" InstID="Distance to Small trees"></PropDscrId>
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
@@ -542,19 +514,11 @@
 						<Params></Params>
 					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
-						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Blue"></PropDscrId>
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Red"></PropDscrId>
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 						<Params>
-							<DValue type="img_chnl" value="Blue" scope="" name="valChnl"></DValue>
-						</Params>
-					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1567657061" group_id="mean.chnl.object.prop">
-						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Graticules"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue type="img_chnl" value="Graticules" scope="" name="valChnl"></DValue>
+							<DValue type="img_chnl" value="Red" scope="" name="valChnl"></DValue>
 						</Params>
 					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
@@ -566,19 +530,11 @@
 						</Params>
 					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1555134885" group_id="mean.chnl.object.prop">
-						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Red"></PropDscrId>
+						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Blue"></PropDscrId>
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 						<Params>
-							<DValue type="img_chnl" value="Red" scope="" name="valChnl"></DValue>
-						</Params>
-					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1568733978" group_id="mean.chnl.object.prop">
-						<PropDscrId GUID="44411C83-609B-4758-93D3-FF62DF246855" InstID="Mean Interstitial"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue type="img_chnl" value="Interstitial" scope="" name="valChnl"></DValue>
+							<DValue type="img_chnl" value="Blue" scope="" name="valChnl"></DValue>
 						</Params>
 					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1565503346" group_id="shape.geom.object.prop">
@@ -649,15 +605,6 @@
 							<DValue value="0" type="int" name="iDist"></DValue>
 						</Params>
 					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1566052113" group_id="relarea.nghb.class.prop">
-						<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Large river (0)1"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue value="43" type="clssId" name="valClss"></DValue>
-							<DValue value="0" type="int" name="iDist"></DValue>
-						</Params>
-					</PropDscr>
 					<PropDscr Flag="2" strUserName="delph" tChngTime="1566103267" group_id="relarea.nghb.class.prop">
 						<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Black (20)"></PropDscrId>
 						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
@@ -682,15 +629,6 @@
 						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
 						<Params>
 							<DValue value="20" type="clssId" name="valClss"></DValue>
-							<DValue value="20" type="int" name="iDist"></DValue>
-						</Params>
-					</PropDscr>
-					<PropDscr Flag="2" strUserName="delph" tChngTime="1566082434" group_id="relarea.nghb.class.prop">
-						<PropDscrId GUID="07BF85ED-1EDA-4e83-991E-59793B30C96F" InstID="Rel. area of Characters (20)"></PropDscrId>
-						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-						<Params>
-							<DValue value="8" type="clssId" name="valClss"></DValue>
 							<DValue value="20" type="int" name="iDist"></DValue>
 						</Params>
 					</PropDscr>
@@ -775,10 +713,6 @@
 					<SubClss></SubClss>
 					<SubGrp></SubGrp>
 				</Clss>
-				<Clss Id="8" PrfdGrp="8">
-					<SubClss></SubClss>
-					<SubGrp></SubGrp>
-				</Clss>
 				<Clss Id="13" PrfdGrp="13">
 					<SubClss></SubClss>
 					<SubGrp></SubGrp>
@@ -815,18 +749,6 @@
 					<SubClss></SubClss>
 					<SubGrp></SubGrp>
 				</Clss>
-				<Clss Id="42" PrfdGrp="42">
-					<SubClss></SubClss>
-					<SubGrp></SubGrp>
-				</Clss>
-				<Clss Id="17" PrfdGrp="17">
-					<SubClss></SubClss>
-					<SubGrp></SubGrp>
-				</Clss>
-				<Clss Id="43" PrfdGrp="43">
-					<SubClss></SubClss>
-					<SubGrp></SubGrp>
-				</Clss>
 				<Clss Id="15" PrfdGrp="15">
 					<SubClss></SubClss>
 					<SubGrp></SubGrp>
@@ -852,6 +774,10 @@
 					<SubGrp></SubGrp>
 				</Clss>
 				<Clss Id="48" PrfdGrp="48">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="49" PrfdGrp="49">
 					<SubClss></SubClss>
 					<SubGrp></SubGrp>
 				</Clss>
@@ -894,13 +820,6 @@
 				</Term>
 				<Term TermEvalType="0">
 					<TermBase ClssId="6" flags="0">
-						<Weight>
-							<DValue value="1" type="int"></DValue>
-						</Weight>
-					</TermBase>
-				</Term>
-				<Term TermEvalType="0">
-					<TermBase ClssId="8" flags="0">
 						<Weight>
 							<DValue value="1" type="int"></DValue>
 						</Weight>
@@ -970,27 +889,6 @@
 					</TermBase>
 				</Term>
 				<Term TermEvalType="0">
-					<TermBase ClssId="42" flags="0">
-						<Weight>
-							<DValue value="1" type="int"></DValue>
-						</Weight>
-					</TermBase>
-				</Term>
-				<Term TermEvalType="0">
-					<TermBase ClssId="17" flags="0">
-						<Weight>
-							<DValue value="1" type="int"></DValue>
-						</Weight>
-					</TermBase>
-				</Term>
-				<Term TermEvalType="0">
-					<TermBase ClssId="43" flags="0">
-						<Weight>
-							<DValue value="1" type="int"></DValue>
-						</Weight>
-					</TermBase>
-				</Term>
-				<Term TermEvalType="0">
 					<TermBase ClssId="15" flags="0">
 						<Weight>
 							<DValue value="1" type="int"></DValue>
@@ -1039,6 +937,13 @@
 						</Weight>
 					</TermBase>
 				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="49" flags="0">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
 			</AllTerm>
 		</ClssHrchy>
 		<MapVrblCntnr></MapVrblCntnr>
@@ -1058,7 +963,6 @@
 				<SmplList ClssId="4"></SmplList>
 				<SmplList ClssId="5"></SmplList>
 				<SmplList ClssId="6"></SmplList>
-				<SmplList ClssId="8"></SmplList>
 				<SmplList ClssId="13"></SmplList>
 				<SmplList ClssId="18"></SmplList>
 				<SmplList ClssId="20"></SmplList>
@@ -1068,9 +972,6 @@
 				<SmplList ClssId="39"></SmplList>
 				<SmplList ClssId="40"></SmplList>
 				<SmplList ClssId="41"></SmplList>
-				<SmplList ClssId="42"></SmplList>
-				<SmplList ClssId="17"></SmplList>
-				<SmplList ClssId="43"></SmplList>
 				<SmplList ClssId="15"></SmplList>
 				<SmplList ClssId="16"></SmplList>
 				<SmplList ClssId="44"></SmplList>
@@ -1078,11 +979,13 @@
 				<SmplList ClssId="46"></SmplList>
 				<SmplList ClssId="47"></SmplList>
 				<SmplList ClssId="48"></SmplList>
+				<SmplList ClssId="49"></SmplList>
 			</AllClss>
 			<AllProp></AllProp>
 		</Smpls>
 		<plugin-list>
 			<plugin name="eCognition Internal Process Algorithms" version="0.1"></plugin>
+			<plugin name="eCognition Interactive Process Algorithms" version="0.1"></plugin>
 			<plugin name="eCognition Internal Export Process Algorithms" version="0.1"></plugin>
 			<plugin name="eCognition Basic Process Algorithms" version="0.1"></plugin>
 		</plugin-list>
@@ -1090,7 +993,7 @@
 	<CustProcAlgrList></CustProcAlgrList>
 	<ExternalCustProcAlgrList></ExternalCustProcAlgrList>
 	<ProcessList>
-		<ProcBase Name="Run" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+		<ProcBase Name="Run" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 			<vrblValMaxCycle>
 				<DValue value="1." type="double"></DValue>
@@ -1122,7 +1025,7 @@
 						</Params>
 					</Domain>
 					<SubProc>
-						<ProcBase Name="Initial Segmentation, graticules, and interstitial" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+						<ProcBase Name="Initial Segmentation, graticules, and interstitial" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -1281,6 +1184,67 @@
 									</Domain>
 									<SubProc></SubProc>
 								</ProcBase>
+								<ProcBase Name="Interstitial with Distance to scene border &lt;= 60 Pxl and Width >= 120 Pxl at  Level1: Border" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
+									<Params>
+									<DValue value="49" type="clssId" name="valClass"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+									<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="Level1" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									</MapLvlProxy>
+									</DValue>
+									<DValue type="vector" name="mClssFltr">
+									<Values>
+									<DValue value="47" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+									</Values>
+									</DValue>
+									<DValue type="threshold" name="valThrsh">
+									<TermThrsh>
+									<TermGroup eJoint="2">
+									<TermCondition eCmpr="1" eBaseUnit="1" eJoint="0">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="60BF43AE-801B-47ae-AD5A-FAC8B839412A" InstID="Distance to scene border"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="60." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									<TermCondition eCmpr="4" eBaseUnit="1" eJoint="2">
+									<ProcVrblVal1>
+									<DValue type="propDscrId">
+									<PropDscrId GUID="DEA2DCB1-BD89-4972-971A-65C1F58FA3C0" InstID="Width"></PropDscrId>
+									</DValue>
+									</ProcVrblVal1>
+									<ProcVrblVal2>
+									<DValue value="120." type="double"></DValue>
+									</ProcVrblVal2>
+									</TermCondition>
+									</TermGroup>
+									</TermThrsh>
+									</DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									<DValue value="From Parent" type="string" name="valROI"></DValue>
+									<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+									<DValue value="4" type="int" name="iVersion"></DValue>
+									<DValue value="-1" type="int" name="iOldLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+									<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
 								<ProcBase Name="Graticule at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
@@ -1361,7 +1325,7 @@
 								</ProcBase>
 							</SubProc>
 						</ProcBase>
-						<ProcBase Name="General segmentation" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+						<ProcBase Name="General segmentation" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -1528,7 +1492,65 @@
 								</ProcBase>
 							</SubProc>
 						</ProcBase>
-						<ProcBase Name="Contour lines" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+						<ProcBase Name="Save and restore state" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+								<Params></Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc>
+								<ProcBase Name="save project state" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="DD8234F0-EFE7-4eaa-B742-755C5130A8DC">
+									<Params>
+									<DValue value="1" type="bool" name="bSaveState"></DValue>
+									<DValue value="0" type="procVarId" name="vrblName"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+									<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+								<ProcBase Name="restore project state" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+									<vrblValMaxCycle>
+									<DValue value="1." type="double"></DValue>
+									</vrblValMaxCycle>
+									<Algorithm guid="DD8234F0-EFE7-4eaa-B742-755C5130A8DC">
+									<Params>
+									<DValue value="0" type="bool" name="bSaveState"></DValue>
+									<DValue value="0" type="procVarId" name="vrblName"></DValue>
+									</Params>
+									</Algorithm>
+									<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+									<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+									</Params>
+									</Domain>
+									<SubProc></SubProc>
+								</ProcBase>
+							</SubProc>
+						</ProcBase>
+						<ProcBase Name="Contour lines" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -2663,7 +2685,7 @@
 									</Params>
 									</Domain>
 									<SubProc>
-									<ProcBase Name="unclassified with HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.76  at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<ProcBase Name="unclassified with HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.76  at  Level1: Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="1." type="double"></DValue>
@@ -2714,7 +2736,7 @@
 									</Domain>
 									<SubProc></SubProc>
 									</ProcBase>
-									<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.1  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.135  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.52  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) &lt;= 0.25  at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<ProcBase Name="unclassified with HSI Transformation Hue(R='Red',G='Green',B='Blue') >= 0.1  and HSI Transformation Hue(R='Red',G='Green',B='Blue') &lt;= 0.135  and HSI Transformation Intensity(R=Red,G=Green,B=Blue) >= 0.52  and HSI Transformation Saturation(R=Red,G=Green,B=Blue) &lt;= 0.25  at  Level1: Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="1." type="double"></DValue>
@@ -2795,7 +2817,7 @@
 									</Domain>
 									<SubProc></SubProc>
 									</ProcBase>
-									<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="1." type="double"></DValue>
@@ -2990,7 +3012,7 @@
 									</Params>
 									</Domain>
 									<SubProc>
-									<ProcBase Name="Forest, Soil with Area &lt;= 25 Pxl at  Level1: unclassified" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+									<ProcBase Name="Forest, Open land with Area &lt;= 25 Pxl at  Level1: unclassified" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="1." type="double"></DValue>
@@ -3642,7 +3664,7 @@
 									</Domain>
 									<SubProc></SubProc>
 								</ProcBase>
-								<ProcBase Name="5x: Black, Forest, Soil at  Level1: grow into unclassified with Area &lt;= 30 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+								<ProcBase Name="5x: Black, Forest, Open land at  Level1: grow into unclassified with Area &lt;= 30 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="5." type="double"></DValue>
@@ -3767,7 +3789,7 @@
 									</Domain>
 									<SubProc></SubProc>
 								</ProcBase>
-								<ProcBase Name="20x: Forest, Soil, Water at  Level1: grow into Graticule, Interstitial" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+								<ProcBase Name="20x: Forest, Open land, Water at  Level1: grow into Graticule, Interstitial" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 									<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 									<vrblValMaxCycle>
 									<DValue value="20." type="double"></DValue>
@@ -3880,7 +3902,7 @@
 						</Params>
 					</Domain>
 					<SubProc>
-						<ProcBase Name="Black, Forest, Soil, Still unclassified with Rel. area of Water (0) >= 0.9  and Area &lt;= 200 Pxl at  Level1: Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Black, Forest, Open land, Still unclassified with Rel. area of Water (0) >= 0.9  and Area &lt;= 200 Pxl at  Level1: Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -4131,7 +4153,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="loop: Large water body at  Level1: grow into Soil with Rel. border to Large water body >= 0.45" bLoopChg="1" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="loop: Large water body at  Level1: grow into Open land with Rel. border to Large water body >= 0.45" bLoopChg="1" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -5393,7 +5415,7 @@
 				</ProcBase>
 			</SubProc>
 		</ProcBase>
-		<ProcBase Name="New" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+		<ProcBase Name="New" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 			<vrblValMaxCycle>
 				<DValue value="1." type="double"></DValue>
@@ -6009,7 +6031,7 @@
 						</Params>
 					</Domain>
 					<SubProc>
-						<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -6126,7 +6148,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="10x: Forest, Soil with Area >= 200 Pxl at  Level1: grow into Black, Contour lines, Still unclassified, Tiny swamp lines" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="10x: Forest, Open land with Area >= 200 Pxl at  Level1: grow into Black, Contour lines, Still unclassified, Tiny swamp lines" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -6217,7 +6239,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="10x: Black, Forest, Still unclassified with Rel. border to Soil >= 1  and Area &lt;= 200 Pxl at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="10x: Black, Forest, Still unclassified with Rel. border to Open land >= 1  and Area &lt;= 200 Pxl at  Level1: Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -6280,7 +6302,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="10x: Black, Soil, Still unclassified with Rel. border to Forest >= 0.8  and Area &lt;= 200 Pxl at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="10x: Black, Open land, Still unclassified with Rel. border to Forest >= 0.8  and Area &lt;= 200 Pxl at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -6343,7 +6365,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="Forest, Soil at  Level1: &lt;- Black, Forest, Soil, Still unclassified, Tiny swamp lines, Tiny water Area &lt;= 200 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Forest, Open land at  Level1: &lt;- Black, Forest, Open land, Still unclassified, Tiny swamp lines, Tiny water Area &lt;= 200 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -6447,7 +6469,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="Soil at  Level1: &lt;- Contour lines Rel. border to Soil > 0.5" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Open land at  Level1: &lt;- Contour lines Rel. border to Open land > 0.5" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -6681,7 +6703,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="loop: Large water body at  Level1: grow into Black, Forest, Graticule, Soil, Still unclassified, Tiny water, Water with Rel. border to Large water body >= 0.6" bLoopChg="1" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="loop: Large water body at  Level1: grow into Black, Forest, Graticule, Open land, Still unclassified, Tiny water, Water with Rel. border to Large water body >= 0.6" bLoopChg="1" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -6866,7 +6888,7 @@
 						</ProcBase>
 					</SubProc>
 				</ProcBase>
-				<ProcBase Name="Streams" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
+				<ProcBase Name="Streams" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -6969,7 +6991,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="10x: Streams with Rel. border to Soil >= 0.6  at  Level1: grow into Soil, Still unclassified" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="10x: Streams with Rel. border to Open land >= 0.6  at  Level1: grow into Open land, Still unclassified" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -7096,7 +7118,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="10x: Streams at  Level1: shrink using Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="10x: Streams at  Level1: shrink using Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="10." type="double"></DValue>
@@ -7169,7 +7191,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -7226,7 +7248,7 @@
 						</Params>
 					</Domain>
 					<SubProc>
-						<ProcBase Name="Soil with Rel. border to Large trees >= 0.8  and Area &lt;= 500 Pxl at  Level1: Large trees" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Open land with Rel. border to Large trees >= 0.8  and Area &lt;= 500 Pxl at  Level1: Large trees" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -7287,7 +7309,7 @@
 							</Domain>
 							<SubProc></SubProc>
 						</ProcBase>
-						<ProcBase Name="Large trees, Scattered trees and scrub, Scrub at  Level1: &lt;- Forest, Soil Area &lt;= 405 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+						<ProcBase Name="Large trees, Scattered trees and scrub, Scrub at  Level1: &lt;- Forest, Open land Area &lt;= 405 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 							<vrblValMaxCycle>
 								<DValue value="1." type="double"></DValue>
@@ -7442,7 +7464,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Forested swamp, Forest, Large water body, Soil, Streams, Swamp at  Level1: export classification to LandCoverRas" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Forested swamp, Forest, Large water body, Open land, Streams, Swamp at  Level1: export classification to LandCoverRas" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7514,7 +7536,7 @@
 				</Params>
 			</Domain>
 			<SubProc>
-				<ProcBase Name="2x: Forest, Forested swamp, Soil, Swamp at  Level1: &lt;- Large trees, Scattered trees and scrub, Scrub &lt;not found> = 0" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="2x: Forest, Forested swamp, Open land, Swamp at  Level1: &lt;- Large trees, Scattered trees and scrub, Scrub &lt;not found> = 0" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="2." type="double"></DValue>
@@ -7635,7 +7657,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp lines with Rel. border to Forest >= 0.5  and Rel. border to Soil &lt;= 0.5  at  Level1: Forested swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp lines with Rel. border to Forest >= 0.5  and Rel. border to Open land &lt;= 0.5  at  Level1: Forested swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7696,7 +7718,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp lines with Rel. border to Soil >= 0.8  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp lines with Rel. border to Open land >= 0.8  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7747,7 +7769,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp lines with Rel. border to Soil >= 0.5  and Rel. border to Forest &lt;= 0.5  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp lines with Rel. border to Open land >= 0.5  and Rel. border to Forest &lt;= 0.5  at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7808,7 +7830,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp lines with Rel. border to Soil > Rel. border to Forest at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp lines with Rel. border to Open land > Rel. border to Forest at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7861,7 +7883,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp lines with Rel. border to Soil &lt; Rel. border to Forest at  Level1: Forested swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp lines with Rel. border to Open land &lt; Rel. border to Forest at  Level1: Forested swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -7914,7 +7936,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Swamp with Number of Swamp (30) &lt; 1  at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Swamp with Number of Swamp (30) &lt; 1  at  Level1: Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -8016,7 +8038,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="50x: Swamp at  Level1: grow(y) into Soil, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="50x: Swamp at  Level1: grow(y) into Open land, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="50." type="double"></DValue>
@@ -8089,7 +8111,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="30x: Swamp at  Level1: grow into Soil, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="30x: Swamp at  Level1: grow into Open land, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="30." type="double"></DValue>
@@ -8235,7 +8257,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="20x: Forested swamp at  Level1: grow into Soil, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="20x: Forested swamp at  Level1: grow into Open land, Water" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="20." type="double"></DValue>
@@ -8404,7 +8426,7 @@
 				</Params>
 			</Domain>
 			<SubProc>
-				<ProcBase Name="10x: Soil with Rel. border to Forest >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="10x: Open land with Rel. border to Forest >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Forest" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="10." type="double"></DValue>
@@ -8465,7 +8487,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="10x: Forest with Rel. border to Soil >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Soil" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="10x: Forest with Rel. border to Open land >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Open land" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="10." type="double"></DValue>
@@ -8565,7 +8587,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="10x: Soil with Rel. border to Swamp >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="10x: Open land with Rel. border to Swamp >= 0.75  and Area &lt;= 1000 Pxl at  Level1: Swamp" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="10." type="double"></DValue>
@@ -8726,7 +8748,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -8804,7 +8826,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="5x: Forested swamp, Forest, Soil, Swamp at  Level1: &lt;- Black, Contour lines, Forested swamp, Forest, Soil, Still unclassified, Swamp lines, Swamp, Tiny swamp lines, Tiny water Area &lt;= 200 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="5x: Forested swamp, Forest, Open land, Swamp at  Level1: &lt;- Black, Contour lines, Forested swamp, Forest, Open land, Still unclassified, Swamp lines, Swamp, Tiny swamp lines, Tiny water Area &lt;= 200 Pxl" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="5." type="double"></DValue>
@@ -8931,7 +8953,7 @@
 				</Params>
 			</Domain>
 			<SubProc>
-				<ProcBase Name="5x: Forest, Forested swamp, Large water body, Soil, Swamp at  Level1: &lt;- Black, unclassified &lt;not found> = 0" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="5x: Forest, Forested swamp, Large water body, Open land, Swamp at  Level1: &lt;- Black, unclassified &lt;not found> = 0" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="5." type="double"></DValue>
@@ -9061,7 +9083,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -9235,7 +9257,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Soil at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Open land at  Level1: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -9331,7 +9353,7 @@
 				</Params>
 			</Domain>
 			<SubProc>
-				<ProcBase Name="Forested swamp, Forest, Large water body, Soil, Streams, Swamp at  Level1: export object shapes to Landcover" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Forested swamp, Forest, Large water body, Open land, Streams, Swamp at  Level1: export object shapes to Landcover" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -9417,7 +9439,7 @@
 					</Domain>
 					<SubProc></SubProc>
 				</ProcBase>
-				<ProcBase Name="Forested swamp, Forest, Large water body, Soil, Streams, Swamp at  Level1: export classification to LandCoverRas" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
+				<ProcBase Name="Forested swamp, Forest, Large water body, Open land, Streams, Swamp at  Level1: export classification to LandCoverRas" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
 					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
 					<vrblValMaxCycle>
 						<DValue value="1." type="double"></DValue>
@@ -9473,412 +9495,12 @@
 				</ProcBase>
 			</SubProc>
 		</ProcBase>
-		<ProcBase Name="Export Black - DON'T RUN" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
-			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-			<vrblValMaxCycle>
-				<DValue value="1." type="double"></DValue>
-			</vrblValMaxCycle>
-			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
-				<Params></Params>
-			</Algorithm>
-			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
-				<Params>
-					<DValue type="threshold" name="valThrsh"></DValue>
-					<DValue type="threshold" name="valThrsh2"></DValue>
-					<DValue value="From Parent" type="string" name="valMap"></DValue>
-				</Params>
-			</Domain>
-			<SubProc>
-				<ProcBase Name="Black at  Level1: export object shapes to Black" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<vrblValMaxCycle>
-						<DValue value="1." type="double"></DValue>
-					</vrblValMaxCycle>
-					<Algorithm guid="E8AAA2C4-4DCA-4684-A918-87E7C53CDC8D">
-						<Params>
-							<DValue value="0" type="int" name="eExportMode"></DValue>
-							<DValue value="Black" type="string" name="strExportItem"></DValue>
-							<DValue value="-1" type="procVarId" name="vrblExportItem"></DValue>
-							<DValue value="C:\Users\delph\Desktop\GIS\Capstone\eCog_Belarus\Output\Black.shp" type="string" name="strExportPath"></DValue>
-							<DValue value="1" type="bool" name="bExportSeries"></DValue>
-							<DValue value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;ExportInfo SingleFilePerWksp=&quot;0&quot; SingleFilePerItem=&quot;0&quot; ExportItem=&quot;Black&quot; ExportType=&quot;Vector&quot; DriverID=&quot;SHP&quot; ExportPath=&quot;C:\Users\delph\Desktop\GIS\Capstone\eCog_Belarus\Output\Black.shp&quot;>&lt;/ExportInfo>" type="string" name="strExportItemInfo"></DValue>
-							<DValue value="temporary" type="string" name="valExportTempLayer"></DValue>
-							<DValue type="vector" name="vColInfo">
-								<Values>
-									<DValue type="vector" indx="0">
-									<Values>
-									<DValue type="propDscrId" indx="0">
-									<PropDscrId GUID="7437A3D3-00FD-4315-8993-9EC1165F7794" InstID="Assigned class"></PropDscrId>
-									</DValue>
-									<DValue value="Assigned_c" type="string" indx="1"></DValue>
-									<DValue value="3" type="int" indx="2"></DValue>
-									<DValue value="-1" type="int" indx="3"></DValue>
-									<DValue value="-1" type="int" indx="4"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="1">
-									<Values>
-									<DValue type="propDscrId" indx="0">
-									<PropDscrId GUID="2ECAB4E2-FCE5-4471-86D1-71A09D4892AE" InstID="Class name(0,0)"></PropDscrId>
-									</DValue>
-									<DValue value="Class_name" type="string" indx="1"></DValue>
-									<DValue value="3" type="int" indx="2"></DValue>
-									<DValue value="-1" type="int" indx="3"></DValue>
-									<DValue value="-1" type="int" indx="4"></DValue>
-									</Values>
-									</DValue>
-								</Values>
-							</DValue>
-							<DValue value="0" type="bool" name="bUseFtrList"></DValue>
-							<DValue value="Assigned_c; Class_name" type="string" name="EditAttrTbl"></DValue>
-							<DValue value="-1" type="procVarId" name="FeatureListAttrTbl"></DValue>
-							<DValue value="3" type="int" name="eGeomType"></DValue>
-							<DValue value="8" type="int" name="eExprtType"></DValue>
-							<DValue value="1" type="bool" name="bShpUseGeocoding"></DValue>
-							<DValue value="0" type="int" name="eCoordOrient"></DValue>
-							<DValue value="SHP" type="string" name="eExprtFormat"></DValue>
-							<DValue value="Black" type="string" name="featClassName"></DValue>
-							<DValue type="img_chnl" value="" name="pRefChnl"></DValue>
-							<DValue value="{:ArcSDE.Connect.Dir}\default.das" type="string" name="exprtStorageLocFile"></DValue>
-							<DValue value="10000000,6000000" type="string" name="spatDomainOffset"></DValue>
-							<DValue value="1000" type="string" name="spatDomainPrec"></DValue>
-						</Params>
-					</Algorithm>
-					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
-						<Params>
-							<DValue type="lvlName" name="valMapLvl">
-								<MapLvlProxy strName="Level1" bVrbl="0">
-									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-								</MapLvlProxy>
-							</DValue>
-							<DValue type="vector" name="mClssFltr">
-								<Values>
-									<DValue value="3" type="clssId" indx="0"></DValue>
-									<DValue value="User defined" type="string" indx="1"></DValue>
-								</Values>
-							</DValue>
-							<DValue type="threshold" name="valThrsh"></DValue>
-							<DValue type="threshold" name="valThrsh2"></DValue>
-							<DValue value="From Parent" type="string" name="valMap"></DValue>
-							<DValue value="From Parent" type="string" name="valROI"></DValue>
-							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
-							<DValue value="4" type="int" name="iVersion"></DValue>
-							<DValue value="-1" type="int" name="iOldLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
-						</Params>
-					</Domain>
-					<SubProc></SubProc>
-				</ProcBase>
-			</SubProc>
-		</ProcBase>
-		<ProcBase Name="Export contour lines - DON'T RUN" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
-			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-			<vrblValMaxCycle>
-				<DValue value="1." type="double"></DValue>
-			</vrblValMaxCycle>
-			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
-				<Params></Params>
-			</Algorithm>
-			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
-				<Params>
-					<DValue type="threshold" name="valThrsh"></DValue>
-					<DValue type="threshold" name="valThrsh2"></DValue>
-					<DValue value="From Parent" type="string" name="valMap"></DValue>
-				</Params>
-			</Domain>
-			<SubProc>
-				<ProcBase Name="Contour lines at  Level1: export object shapes to ContourLines" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<vrblValMaxCycle>
-						<DValue value="1." type="double"></DValue>
-					</vrblValMaxCycle>
-					<Algorithm guid="E8AAA2C4-4DCA-4684-A918-87E7C53CDC8D">
-						<Params>
-							<DValue value="0" type="int" name="eExportMode"></DValue>
-							<DValue value="ContourLines" type="string" name="strExportItem"></DValue>
-							<DValue value="-1" type="procVarId" name="vrblExportItem"></DValue>
-							<DValue value="C:\Users\delph\Desktop\GIS\Capstone\eCog_Belarus\Output\ContourLines.shp" type="string" name="strExportPath"></DValue>
-							<DValue value="0" type="bool" name="bExportSeries"></DValue>
-							<DValue value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;ExportInfo SingleFilePerWksp=&quot;0&quot; SingleFilePerItem=&quot;1&quot; ExportItem=&quot;ContourLines&quot; ExportType=&quot;Vector&quot; DriverID=&quot;SHP&quot; ExportPath=&quot;C:\Users\delph\Desktop\GIS\Capstone\eCog_Belarus\Output\ContourLines.shp&quot;>&lt;/ExportInfo>" type="string" name="strExportItemInfo"></DValue>
-							<DValue value="temporary" type="string" name="valExportTempLayer"></DValue>
-							<DValue type="vector" name="vColInfo">
-								<Values>
-									<DValue type="vector" indx="0">
-									<Values>
-									<DValue type="propDscrId" indx="0">
-									<PropDscrId GUID="7437A3D3-00FD-4315-8993-9EC1165F7794" InstID="Assigned class"></PropDscrId>
-									</DValue>
-									<DValue value="Assigned_c" type="string" indx="1"></DValue>
-									<DValue value="3" type="int" indx="2"></DValue>
-									<DValue value="-1" type="int" indx="3"></DValue>
-									<DValue value="-1" type="int" indx="4"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="1">
-									<Values>
-									<DValue type="propDscrId" indx="0">
-									<PropDscrId GUID="2ECAB4E2-FCE5-4471-86D1-71A09D4892AE" InstID="Class name(0,0)"></PropDscrId>
-									</DValue>
-									<DValue value="Class_name" type="string" indx="1"></DValue>
-									<DValue value="3" type="int" indx="2"></DValue>
-									<DValue value="-1" type="int" indx="3"></DValue>
-									<DValue value="-1" type="int" indx="4"></DValue>
-									</Values>
-									</DValue>
-								</Values>
-							</DValue>
-							<DValue value="0" type="bool" name="bUseFtrList"></DValue>
-							<DValue value="Assigned_c; Class_name" type="string" name="EditAttrTbl"></DValue>
-							<DValue value="-1" type="procVarId" name="FeatureListAttrTbl"></DValue>
-							<DValue value="3" type="int" name="eGeomType"></DValue>
-							<DValue value="8" type="int" name="eExprtType"></DValue>
-							<DValue value="1" type="bool" name="bShpUseGeocoding"></DValue>
-							<DValue value="0" type="int" name="eCoordOrient"></DValue>
-							<DValue value="SHP" type="string" name="eExprtFormat"></DValue>
-							<DValue value="ContourLines" type="string" name="featClassName"></DValue>
-							<DValue type="img_chnl" value="" name="pRefChnl"></DValue>
-							<DValue value="{:ArcSDE.Connect.Dir}\default.das" type="string" name="exprtStorageLocFile"></DValue>
-							<DValue value="10000000,6000000" type="string" name="spatDomainOffset"></DValue>
-							<DValue value="1000" type="string" name="spatDomainPrec"></DValue>
-						</Params>
-					</Algorithm>
-					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
-						<Params>
-							<DValue type="lvlName" name="valMapLvl">
-								<MapLvlProxy strName="Level1" bVrbl="0">
-									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-								</MapLvlProxy>
-							</DValue>
-							<DValue type="vector" name="mClssFltr">
-								<Values>
-									<DValue value="6" type="clssId" indx="0"></DValue>
-									<DValue value="User defined" type="string" indx="1"></DValue>
-								</Values>
-							</DValue>
-							<DValue type="threshold" name="valThrsh"></DValue>
-							<DValue type="threshold" name="valThrsh2"></DValue>
-							<DValue value="From Parent" type="string" name="valMap"></DValue>
-							<DValue value="From Parent" type="string" name="valROI"></DValue>
-							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
-							<DValue value="4" type="int" name="iVersion"></DValue>
-							<DValue value="-1" type="int" name="iOldLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
-						</Params>
-					</Domain>
-					<SubProc></SubProc>
-				</ProcBase>
-			</SubProc>
-		</ProcBase>
-		<ProcBase Name="Resegment white - DON'T RUN" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
-			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-			<vrblValMaxCycle>
-				<DValue value="1." type="double"></DValue>
-			</vrblValMaxCycle>
-			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
-				<Params></Params>
-			</Algorithm>
-			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
-				<Params>
-					<DValue type="threshold" name="valThrsh"></DValue>
-					<DValue type="threshold" name="valThrsh2"></DValue>
-					<DValue value="From Parent" type="string" name="valMap"></DValue>
-				</Params>
-			</Domain>
-			<SubProc>
-				<ProcBase Name="White at  Level1: quadtree: 100" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<vrblValMaxCycle>
-						<DValue value="1." type="double"></DValue>
-					</vrblValMaxCycle>
-					<Algorithm guid="C092C8B6-03A8-42c1-9C21-7A861FD0925C">
-						<Params>
-							<DValue value="0" type="int" name="iQTMode"></DValue>
-							<DValue value="100." type="double" name="vrblQTScale"></DValue>
-							<DValue type="lvlName" name="valMapLvl"></DValue>
-							<DValue value="1" type="bool" name="bDoOverwrite"></DValue>
-							<DValue type="vector" name="vImgChnlProxy">
-								<Values>
-									<DValue type="vector" indx="0">
-									<Values>
-									<DValue type="img_chnl" value="Blue" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="1">
-									<Values>
-									<DValue type="img_chnl" value="Green" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="2">
-									<Values>
-									<DValue type="img_chnl" value="Red" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-								</Values>
-							</DValue>
-							<DValue type="vector" name="vGisChnlProxy">
-								<Values></Values>
-							</DValue>
-						</Params>
-					</Algorithm>
-					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
-						<Params>
-							<DValue type="lvlName" name="valMapLvl">
-								<MapLvlProxy strName="Level1" bVrbl="0">
-									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-								</MapLvlProxy>
-							</DValue>
-							<DValue type="vector" name="mClssFltr">
-								<Values>
-									<DValue value="42" type="clssId" indx="0"></DValue>
-									<DValue value="User defined" type="string" indx="1"></DValue>
-								</Values>
-							</DValue>
-							<DValue type="threshold" name="valThrsh"></DValue>
-							<DValue type="threshold" name="valThrsh2"></DValue>
-							<DValue value="From Parent" type="string" name="valMap"></DValue>
-							<DValue value="From Parent" type="string" name="valROI"></DValue>
-							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
-							<DValue value="4" type="int" name="iVersion"></DValue>
-							<DValue value="-1" type="int" name="iOldLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
-						</Params>
-					</Domain>
-					<SubProc></SubProc>
-				</ProcBase>
-				<ProcBase Name="White at  Level1: unclassified" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<vrblValMaxCycle>
-						<DValue value="1." type="double"></DValue>
-					</vrblValMaxCycle>
-					<Algorithm guid="3AC44F21-C6B2-4804-9929-BB18BE6F2051">
-						<Params>
-							<DValue value="-1" type="clssId" name="valClass"></DValue>
-						</Params>
-					</Algorithm>
-					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
-						<Params>
-							<DValue type="lvlName" name="valMapLvl">
-								<MapLvlProxy strName="Level1" bVrbl="0">
-									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-								</MapLvlProxy>
-							</DValue>
-							<DValue type="vector" name="mClssFltr">
-								<Values>
-									<DValue value="42" type="clssId" indx="0"></DValue>
-									<DValue value="User defined" type="string" indx="1"></DValue>
-								</Values>
-							</DValue>
-							<DValue type="threshold" name="valThrsh"></DValue>
-							<DValue type="threshold" name="valThrsh2"></DValue>
-							<DValue value="From Parent" type="string" name="valMap"></DValue>
-							<DValue value="From Parent" type="string" name="valROI"></DValue>
-							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
-							<DValue value="4" type="int" name="iVersion"></DValue>
-							<DValue value="-1" type="int" name="iOldLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
-						</Params>
-					</Domain>
-					<SubProc></SubProc>
-				</ProcBase>
-			</SubProc>
-		</ProcBase>
-		<ProcBase Name="Resegment black - DON'T RUN" bLoopChg="0" bExpand="0" bActive="1" bAutoName="0" bSubrtn="0">
-			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-			<vrblValMaxCycle>
-				<DValue value="1." type="double"></DValue>
-			</vrblValMaxCycle>
-			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
-				<Params></Params>
-			</Algorithm>
-			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
-				<Params>
-					<DValue type="threshold" name="valThrsh"></DValue>
-					<DValue type="threshold" name="valThrsh2"></DValue>
-					<DValue value="From Parent" type="string" name="valMap"></DValue>
-				</Params>
-			</Domain>
-			<SubProc>
-				<ProcBase Name="Black at  Level1: quadtree: 100" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0">
-					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
-					<vrblValMaxCycle>
-						<DValue value="1." type="double"></DValue>
-					</vrblValMaxCycle>
-					<Algorithm guid="C092C8B6-03A8-42c1-9C21-7A861FD0925C">
-						<Params>
-							<DValue value="0" type="int" name="iQTMode"></DValue>
-							<DValue value="100." type="double" name="vrblQTScale"></DValue>
-							<DValue type="lvlName" name="valMapLvl"></DValue>
-							<DValue value="1" type="bool" name="bDoOverwrite"></DValue>
-							<DValue type="vector" name="vImgChnlProxy">
-								<Values>
-									<DValue type="vector" indx="0">
-									<Values>
-									<DValue type="img_chnl" value="Blue" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="1">
-									<Values>
-									<DValue type="img_chnl" value="Green" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-									<DValue type="vector" indx="2">
-									<Values>
-									<DValue type="img_chnl" value="Red" scope="" indx="0"></DValue>
-									<DValue value="1" type="bool" indx="1"></DValue>
-									</Values>
-									</DValue>
-								</Values>
-							</DValue>
-							<DValue type="vector" name="vGisChnlProxy">
-								<Values></Values>
-							</DValue>
-						</Params>
-					</Algorithm>
-					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
-						<Params>
-							<DValue type="lvlName" name="valMapLvl">
-								<MapLvlProxy strName="Level1" bVrbl="0">
-									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
-								</MapLvlProxy>
-							</DValue>
-							<DValue type="vector" name="mClssFltr">
-								<Values>
-									<DValue value="3" type="clssId" indx="0"></DValue>
-									<DValue value="User defined" type="string" indx="1"></DValue>
-								</Values>
-							</DValue>
-							<DValue type="threshold" name="valThrsh"></DValue>
-							<DValue type="threshold" name="valThrsh2"></DValue>
-							<DValue value="From Parent" type="string" name="valMap"></DValue>
-							<DValue value="From Parent" type="string" name="valROI"></DValue>
-							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
-							<DValue value="4" type="int" name="iVersion"></DValue>
-							<DValue value="-1" type="int" name="iOldLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
-							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
-						</Params>
-					</Domain>
-					<SubProc></SubProc>
-				</ProcBase>
-			</SubProc>
-		</ProcBase>
 	</ProcessList>
 	<ExportedItems>
-		<item name="Vegetation" type="Vector" driver="SHP" ext="shp" path="Output\VAC9619-000508geo_clip.2.14726 m_pxl.subsets.Subset 1.2.14726 m_pxl.subsets.Subset3.dbf"></item>
 		<item name="LandCoverRas" type="Raster" driver="TIF" ext="tif" path="Output\Landcover_ras.tif"></item>
 		<item name="Landcover" type="Vector" driver="SHP" ext="shp" path="Output\VAC9619-000508geo_clip.2.14726 m_pxl.subsets.Subset 1.2.14726 m_pxl.subsets.Subset3.dbf"></item>
-		<item name="Black" type="Vector" driver="SHP" ext="shp" path="Output\Black.shp"></item>
-		<item name="ContourLines" type="Vector" driver="SHP" ext="shp" path="Output\ContourLines.shp"></item>
 		<item name="LandCoverRas" type="Raster" driver="TIF" ext="tif" path="Output\Landcover_ras.tif"></item>
+		<item name="Vegetation" type="Vector" driver="SHP" ext="shp" path="Output\VAC9619-000508geo_clip.2.14726 m_pxl.subsets.Subset 1.2.14726 m_pxl.subsets.Subset3.dbf"></item>
 	</ExportedItems>
 	<LcnsIds></LcnsIds>
 </eCog.Proc>
